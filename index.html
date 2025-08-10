@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhargav Kancherla - Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; background: #f5f7fa; color: #333; }
+    header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: #fff; text-align: center; padding: 50px 20px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; opacity: 0.95; }
+    .btn { display: inline-block; background: #ff9800; color: white; padding: 10px 20px; margin-top: 15px; border-radius: 6px; text-decoration: none; transition: background 0.3s, transform 0.15s; }
+    .btn:hover { background: #e68900; transform: translateY(-2px); }
+    nav { background: #1e3c72; text-align: center; padding: 12px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(30,60,114,0.08); }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; }
+    .hero { display: flex; gap: 30px; align-items: center; justify-content: center; flex-wrap: wrap; }
+    .card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.04); }
+    section { max-width: 1000px; margin: 20px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0px 8px 30px rgba(0,0,0,0.04); }
+    h2 { color: #1e3c72; margin-bottom: 12px; display: inline-block; border-bottom: 3px solid #ff9800; padding-bottom: 6px; }
+    .skills span { display: inline-block; background: #e3f2fd; color: #0d47a1; padding: 8px 12px; margin: 6px; border-radius: 20px; font-size: 0.95rem; }
+    ul { padding-left: 18px; margin-top: 8px; }
+    ul li { margin-bottom: 8px; }
+    footer { background: #1e3c72; color: white; text-align: center; padding: 18px; margin-top: 30px; font-size: 0.95rem; border-radius: 0 0 10px 10px; }
+    /* Smooth scroll animation */
+    html { scroll-behavior: smooth; }
+    /* Little entrance animation */
+    .fade-in { animation: fadeIn 0.9s ease both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: translateY(0);} }
+    /* Responsive design */
+    @media (max-width: 900px) {
+      header { padding: 36px 16px; }
+      header h1 { font-size: 1.9rem; }
+      nav a { margin: 0 10px; font-size: 0.95rem; }
+      section { padding: 20px; margin: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="fade-in">
+  <div class="container hero">
+    <div style="text-align:left; min-width:260px;">
+      <h1>Bhargav Kancherla</h1>
+      <p>Senior Software Engineer · Java & Spring Boot · BPM Specialist</p>
+      <a href="Bhargav+kancherla.pdf" class="btn" download>📄 Download Resume</a>
+    </div>
+    <div class="card" style="min-width:260px; max-width:360px;">
+      <h3 style="color:#1e3c72; margin-bottom:8px;">Quick Facts</h3>
+      <p style="margin-bottom:6px;"><strong>Location:</strong> Chennai, India</p>
+      <p style="margin-bottom:6px;"><strong>Experience:</strong> 3.2+ years</p>
+      <p style="margin-bottom:6px;"><strong>Email:</strong> <a href="mailto:kancherlabhargav49@gmail.com">kancherlabhargav49@gmail.com</a></p>
+      <p style="margin-bottom:0px;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bhargavkancherla8084" target="_blank">bhargavkancherla8084</a></p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="fade-in">
+  <h2>About Me</h2>
+  <p style="margin-top:12px;">Result-oriented Senior Software Engineer with strong expertise in Java, Spring Boot, BPM (Newgen), and API integrations for banking and financial systems. Experienced in building scalable RESTful services, managing integrations with Experian & Temenos, and delivering solutions using Agile practices and DevOps pipelines.</p>
+</section>
+
+<section id="skills" class="fade-in">
+  <h2>Skills</h2>
+  <div style="margin-top:12px;" class="skills">
+    <span>Java</span> <span>Spring Boot</span> <span>REST API</span> <span>SOAP API</span>
+    <span>BPM (Newgen)</span> <span>CCM/ECM</span> <span>JavaScript</span> <span>React</span> <span>Angular</span>
+    <span>HTML</span> <span>CSS</span> <span>Microservices</span> <span>Node.js</span>
+    <span>SQL Server</span> <span>DB2</span> <span>XML</span> <span>JSON</span>
+    <span>Git</span> <span>Maven</span> <span>Docker</span> <span>JIRA</span>
+  </div>
+</section>
+
+<section id="projects" class="fade-in">
+  <h2>Highlighted Projects</h2>
+  <h3 style="margin-top:10px;">Loan Origination & Integration — Al Rajhi Bank (KSA)</h3>
+  <ul>
+    <li>Developed BPM workflows for retail & auto finance processes using Newgen.</li>
+    <li>Integrated Experian credit scoring and Temenos core banking via REST APIs.</li>
+    <li>Implemented template generation and optimized DB interactions for high throughput.</li>
+  </ul>
+
+  <h3 style="margin-top:10px;">Customer Service Automation</h3>
+  <ul>
+    <li>Built API-driven BPM modules to automate case handling and reduce manual effort.</li>
+    <li>Implemented secure JWT-based access for internal services and integrations.</li>
+  </ul>
+</section>
+
+<section id="experience" class="fade-in">
+  <h2>Experience</h2>
+  <h3>Senior Software Engineer — Newgen Software, Bangalore</h3>
+  <p><em>01/2023 - Present</em></p>
+  <ul>
+    <li>Lead API and web service development for BPM, CCM, and ECM product suites.</li>
+    <li>Designed integrations, improved database performance, and implemented CI/CD best practices.</li>
+    <li>Coordinated directly with clients to gather requirements and deliver solutions.</li>
+  </ul>
+
+  <h3 style="margin-top:8px;">Software Engineer — Newgen Software, Noida</h3>
+  <p><em>07/2021 - 12/2022</em></p>
+  <ul>
+    <li>Contributed to AL Rajhi Retail Bank Portal (KSA) focusing on template generation and web services.</li>
+    <li>Managed deployments on JBoss and tracked defects using JIRA.</li>
+  </ul>
+</section>
+
+<section id="education" class="fade-in">
+  <h2>Education</h2>
+  <ul style="margin-top:10px;">
+    <li><strong>BTech in Electronics & Communications</strong> — Lovely Professional University (2017 - 2021)</li>
+    <li>XII — Narayana Institute (2017)</li>
+    <li>X — Narayana Institute (2015)</li>
+  </ul>
+</section>
+
+<section id="contact" class="fade-in">
+  <h2>Contact</h2>
+  <p style="margin-top:10px;">Email: <a href="mailto:kancherlabhargav49@gmail.com">kancherlabhargav49@gmail.com</a></p>
+  <p>Phone: +91-9963140809</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/bhargavkancherla8084" target="_blank">linkedin.com/in/bhargavkancherla8084</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Bhargav Kancherla — Crafted for job applications.
+</footer>
+
+</body>
+</html>
